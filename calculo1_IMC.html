@@ -3,6 +3,27 @@
 <head>
     <meta charset="utf-8">
     <title>Exemplo de Exercício</title>
+	<style>
+		body {
+            
+            background-color: rgb(67, 115, 139);
+			background-image: url('image_imc.jpg');
+			background-size: 1400px 750px;
+			background-repeat: no-repeat;
+			background-position: center top;
+			width: 200px;
+			height: 140px;
+		}
+		.fild {
+			border: 0cap;
+			border-radius: 2px;
+			text-align: center;
+			font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+			
+
+		}
+
+	</style>
     <script type="text/javascript">
         function calcular(){
 
@@ -50,20 +71,21 @@
     </script>
 </head>
 <body>
+	
     <form id="formulario">
-    <fieldset>
+    <fieldset class="fild">
     	<legend>Calculo IMC</legend>
     	
         <label for="kilos">Kilos:</label>
         <input name="kilos" type="text" />
     
-        <label for="metros">metros:</label>
+        <label for="metros">Metros:</label>
         <input name="metros" type="text" />
     
-        <label for="centimetros">centimetros:</label>
+        <label for="centimetros">Centimetros:</label>
         <input name="centimetros" type="text" />
     
-        <label for="imc">imc:</label>
+        <label for="imc">IMC:</label>
         <input name="imc" type="text" disabled="disabled" />
             
         <a href="#" onclick="calcular();">Calcular</a>
